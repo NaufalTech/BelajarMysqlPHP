@@ -10,11 +10,14 @@
 
 .wrapper-daftarComment {
   margin-top: 50px;
+  
+  border: solid red 2px;
 }
 
 .daftarComment{
-  margin-left: 0px;
-  border: solid red 2px;
+  /* margin-left: 0px; */
+  margin: 0 20px 0 20px;
+  /* border: solid red 2px; */
   display: grid;
 }
 .perComment {
@@ -26,7 +29,7 @@
 }
 
 .nama {
-  color: rgb(44, 44, 44);
+  color: black;
   padding-right: 5px;
   border-right: solid red 1px;
 }
@@ -56,12 +59,23 @@ section {
 }
 
 .hr {
-  margin: 0 30px 0 10px;
+  margin: 0 10px 0 10px;
   /* width: 50%; */
+}
+
+form#commentForm {
+  display: grid;
 }
 
 #respond {
     margin-top: 40px;
+    display: grid;
+    text-justify: center;
+    text-align: left;
+  }
+
+  label {
+    left: 0;
   }
   
   #respond input[type='text'],
@@ -69,7 +83,7 @@ section {
   #respond textarea {
     margin-bottom: 10px;
     display: block;
-    width: 100%;
+    width: 97%;
   
     border: 1px solid rgba(0, 0, 0, 0.1);
     -webkit-border-radius: 5px;
@@ -78,6 +92,15 @@ section {
     -ms-border-radius: 5px;
     -khtml-border-radius: 5px;
     border-radius: 5px;
+    /* position: fixed; */
+    justify-self: center;
   
-    line-height: 1.4em;
+    /* line-height: 1.4em; */
+  }
+  #respond input[name="kirim"] {
+    width: fit-content;
+    justify-self: end;
+    padding: 5px;
+    font-size: large;
+    margin: 0 15px 15px 0;
   }

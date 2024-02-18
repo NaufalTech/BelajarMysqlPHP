@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+}
+
+.border {
+    border: solid red 1px;
+    border-radius: 20px;
+    row-gap: 10px;
+}
+
+article#content {
+    padding-top: 50px;
+    background-color: white;
+    display: grid;
+    justify-items: center;
+    /* align-items: center; */
+}
+
+
+
+.border-bottom {
+    border-bottom: solid red 2px;
+    padding-left: 20px;
+}
+
+.wrapper-all-article {
+    display: flex;
+    gap: 20px;
+    max-width: 1500px;
+}
+
+.padding-left-sidebar {
+    padding: 5px 10px;
+    /* border-radius: 10px; */
+}
+
+.left-sidebar-sticky {
+    position: sticky !important;
+    /* width: 20%; */
+    top: 90px;
+    
+}
+
+.wrapper-left-sidebar {
+    width: 20%;
+    
+    /* max-width: 250px; */
+}
+
+.left-sidebar {
+    height: fit-content;
+    /* display: grid;  */
+    /* row-gap; */
+    background-color: lightgray;
+    font-size: larger;
+}
+
+.table-index-sidebar {
+    list-style: disc;
+}
+
+.sub-table-index-sidebar{
+    list-style: circle;
+    margin-left: 20px;
+}
+
+.article-content {
+    width: 80%;
+    
+}
+
+.wrapper-isiContent{
+    display: grid;
+    padding: 0 20px 0 20px;
+}
+
+.wrapper-sidebar {
+    display: grid;
+    
+}
+
+.img-content {
+    display: grid;
+    justify-items: center;
+}
+
+img.mainImg{
+    width: 80%;
+    aspect-ratio: 16/9;
+    /* height: ; */
+    float: top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.judul {
+    font-size: xx-large;
+    margin: 20px 20px 10px 0px;
+}
+
+.header-share {
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    /* text-align: ; */
+    width: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.logo-media-sosial-upper {
+    margin-top: unset;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    /* white-space: pre; */
+    text-justify: distribute;
+    }
+
+tab {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.paragraph1 {
+    tab-size: 10px;
+}
+
+p1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-sidebar {
+    margin-top: 100px;
+}

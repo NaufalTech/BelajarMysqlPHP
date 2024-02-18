@@ -246,52 +246,13 @@
 
 
     article {
-        /* margin: 30px; */
+        /* padding-top: 50px; */
         text-align: justify;
         background-color: rgb(152,255,236);
+
     }
 
-    .judul {
-        font-size: xx-large;
-        /* margin-bottom: 20px; */
-    }
-
-    .header-share {
-        display: flex;
-        align-items: center;
-        justify-content: space-between ;
-        /* text-align: ; */
-        width: 180px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        
-    }
-
-    .logo-media-sosial-upper {
-        margin-top: unset;
-    }
-
-    p {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
-        /* white-space: pre; */
-        text-justify: distribute;
-        }
-
-    tab {
-        display: inline-block;
-        margin-left: 40px;
-    }
-
-    .paragraph1 {
-        tab-size: 10px;
-    }
-
-    p1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    
 
     #nav-bottom {
         background-image: url(https://tse4.mm.bing.net/th?id=OIP.zZrVbGMZMavCDiDTIsocYwHaEK&pid=Api&P=0&h=180);
@@ -581,11 +542,11 @@
 
     } */
 
-    /* a:focus.link-list-mobile {
+    a:focus.link-list-mobile {
         color: black;
         text-decoration: none;
         color: black;
         font-size: larger;
         transition: 150ms;
-    } */
+    }
     /* a:hover */
