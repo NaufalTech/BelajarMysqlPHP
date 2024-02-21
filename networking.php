@@ -60,7 +60,9 @@
                                 <div id="mobile-nav-bar">
                                     <div class="upper-mobile-nav-bar">
                                         <span id="theSideBarExit" class="" onclick="sideBarExit()">
-                                            X
+                                            <div>
+                                                X
+                                            </div>
                                         </span>
                                         <div id="side-nav-search-field" class="search-engines mobile-search-engine" style="border: blue 2px; padding: 0px;">
                                             <input type="text" id="input-nav-side-search-field" class="search-fields " placeholder="search" style="margin-right: 0px; padding: 7px 0 7px 7px;">
@@ -91,25 +93,27 @@
 
         <article id="content">
             <div class="wrapper-all-article ">
-                <div class="wrapper-left-sidebar border">
+                <div class="wrapper-left-sidebar border border-sidebar">
                     <div class="left-sidebar-sticky">
-                        <div class="left-sidebar" style="">
+                        <div class="left-sidebar" >
                             <div class="left-sidebar-name border-bottom">
                                 Daftar isi artikel
                             </div>
-                            <li class="table-index-sidebar border-bottom padding-left-sidebar">
-                                <a href="http://google.com">hehe1</a>
-                            </li>
-                            <div class="wrapper-sub-table-index-sidebar" style="border-bottom: solid red 2px;">
-                                
-                                <li class="sub-table-index-sidebar padding-left-sidebar">
-                                    <a href="#respond">hehe1</a>
+                            <div style="margin-left: 30px;">
+                                <li class="table-index-sidebar border-bottom padding-left-sidebar">
+                                    <a href="http://google.com">hehe1</a>
                                 </li>
+                                <div class="wrapper-sub-table-index-sidebar" style="border-bottom: solid red 2px;">
+                                    
+                                    <li class="sub-table-index-sidebar padding-left-sidebar">
+                                        <a href="#respond">hehe1</a>
+                                    </li>
+                                </div>
+                                <li class="table-index-sidebar border-bottom padding-left-sidebar">
+                                    <a href="http://google.com">hehe1</a>
+                                </li>
+                                <!-- <div class="table-index-sidebar"></div> -->
                             </div>
-                            <li class="table-index-sidebar border-bottom padding-left-sidebar">
-                                <a href="http://google.com">hehe1</a>
-                            </li>
-                            <!-- <div class="table-index-sidebar"></div> -->
                         </div>
                     </div>
                 </div>
@@ -119,7 +123,9 @@
                             <h1 class="judul">CONTOH HALAMAN CONTENT</h1>
                             <time datetime="20223-11-2 11:34">Kamis, 2 November 2023</time>
                             <div class="header-share">
-                                <div class="share">Bagikan :</div>
+                                <div class="share" style="
+                                    margin-right: 20px;
+                                ">Bagikan:</div>
                                 <img class="logo-media-sosial-bottom logo-media-sosial-upper" src="media/x-logo-twitter-elon-musk.jpg" style="margin-top: unset;">
                                 <img class="logo-media-sosial-bottom logo-media-sosial-upper" id="ig-logo-media-sosial-bottom" src="media/ig-logo.jpg" style="margin-top: unset;">
                             </div> 
@@ -153,20 +159,20 @@
                         </div>
                     </div>
                     <div class="wrapper-comment">
-                        <section id="postComment">
+                        <section id="postComment" class="width-80">
                             <div id="respond">
         
-                                <h3>Leave a Comment</h3>
+                                <h3>Berikan Komentar</h3>
                             
                                 <form action="post_comment.php" method="POST" id="commentForm">
                                 
-                                    <label for="nama_pembuat" class="required">Your name</label>
+                                    <label for="nama_pembuat" class="name">Your name</label>
                                     <input type="text" name="nama_pembuat" id="comment_author" value="" tabindex="1" required="required">
                                 
                                     <!-- <label for="email" class="required">Your email;</label>
                                     <input type="email" name="email" id="email" value="" tabindex="2" required="required"> -->
                                 
-                                    <label for="comment" class="required">Your message</label>
+                                    <label for="comment" class="yourMessage">Your message</label>
                                     <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
                                     <br>
                                     <!-- <h6>comment_post_ID value hard-coded as 1</h6> -->
@@ -178,108 +184,109 @@
                         
                             </div>
                         </section>
-                    </div>
-                    <div class="wrapper-daftarComment">
-                        <div class="daftarComment" >
-                            
-                            <?php
-            
-                                function timeAgo($waktuLalu){
-                                    $waktuSekarang = time();
-                                    $waktuLalu = strtotime($waktuLalu);
-                                    $operasiTanggal = $waktuSekarang - $waktuLalu;
-                                    
-                                    $detik = $operasiTanggal;
-                                    $menit = round($operasiTanggal / 60);
-                                    $jam = round($operasiTanggal / 3600);
-                                    $hari = round($operasiTanggal / 86400);
-                                    $minggu = round($operasiTanggal / 604800);
-                                    $bulan = round($operasiTanggal / 2592000);
-                                    $tahun = round($operasiTanggal / 31536000);
-            
-                                    if($detik == 1 | $detik == 0){
-                                        return  'baru saja';
+                        <div class="wrapper-daftarComment width-80">
+                            <h3>Komentar</h3>
+                            <div class="daftarComment" >
+                                
+                                <?php
+                
+                                    function timeAgo($waktuLalu){
+                                        $waktuSekarang = time();
+                                        $waktuLalu = strtotime($waktuLalu);
+                                        $operasiTanggal = $waktuSekarang - $waktuLalu;
+                                        
+                                        $detik = $operasiTanggal;
+                                        $menit = round($operasiTanggal / 60);
+                                        $jam = round($operasiTanggal / 3600);
+                                        $hari = round($operasiTanggal / 86400);
+                                        $minggu = round($operasiTanggal / 604800);
+                                        $bulan = round($operasiTanggal / 2592000);
+                                        $tahun = round($operasiTanggal / 31536000);
+                
+                                        if($detik == 1 | $detik == 0){
+                                            return  'baru saja';
+                                        }
+                                        elseif ($detik < 60) {
+                                            return "{$operasiTanggal} detik yang lalu";
+                                        }
+                                        elseif ($menit < 60) {
+                                            return "{$menit} menit yang lalu";
+                                        }
+                                        elseif ($jam < 24) {
+                                            return "{$jam} jam yang lalu";
+                                        }
+                                        elseif ($hari < 7) {
+                                            return "{$hari} hari yang lalu";
+                                        }
+                                        elseif($minggu < 4){
+                                            return "{$minggu} minggu yang lalu";
+                                        }
+                                        elseif($bulan < 12){
+                                            return "{$bulan} bulan yang lalu";
+                                        }
+                                        elseif($tahun){
+                                            return "{$tahun} tahun yang lalu";
+                                        }
+                                        
                                     }
-                                    elseif ($detik < 60) {
-                                        return "{$operasiTanggal} detik yang lalu";
+                
+                
+                                    function timeAgo1($time_ago){
+                                        $time_ago = time();
+                                        // $time_ago = strtotime($time_ago);
+                                        
+                                        // $timeAgain = date_create($time_ago);
+                                        // $tanggal1 = date_format($timeAgain, "Y/M/d H:i:s"); 
+                                        // $time_elapsed   = $cur_time - $time_ago;
+                
+                                        return $time_ago;
                                     }
-                                    elseif ($menit < 60) {
-                                        return "{$menit} menit yang lalu";
+                
+                                    $TIME = time();
+                                    function timeAgo2($time_ago2){
+                                        $time_ago2 = strtotime($time_ago2);
+                
+                                        return $time_ago2;
                                     }
-                                    elseif ($jam < 24) {
-                                        return "{$jam} jam yang lalu";
-                                    }
-                                    elseif ($hari < 7) {
-                                        return "{$hari} hari yang lalu";
-                                    }
-                                    elseif($minggu < 4){
-                                        return "{$minggu} minggu yang lalu";
-                                    }
-                                    elseif($bulan < 12){
-                                        return "{$bulan} bulan yang lalu";
-                                    }
-                                    elseif($tahun){
-                                        return "{$tahun} tahun yang lalu";
-                                    }
-                                    
-                                }
-            
-            
-                                function timeAgo1($time_ago){
-                                    $time_ago = time();
-                                    // $time_ago = strtotime($time_ago);
-                                    
-                                    // $timeAgain = date_create($time_ago);
-                                    // $tanggal1 = date_format($timeAgain, "Y/M/d H:i:s"); 
-                                    // $time_elapsed   = $cur_time - $time_ago;
-            
-                                    return $time_ago;
-                                }
-            
-                                $TIME = time();
-                                function timeAgo2($time_ago2){
-                                    $time_ago2 = strtotime($time_ago2);
-            
-                                    return $time_ago2;
-                                }
-            
-                                date_default_timezone_set('Etc/GMT-8');
-            
-                                $pilih = "SELECT * FROM comment_table ORDER BY date desc";
-                                $query = mysqli_query($db, $pilih);
-                                while($daftar_comment = mysqli_fetch_array($query)){
-                                    echo"<br>";
-                                    echo"<div class='perComment'>";
-                                    // echo"<td>".$daftar_comment['id']."</td>";
-                                    echo"<div class='bagian_nama'>";
-                                        echo"<div class ='nama'>".$daftar_comment['name']."</div>";
-                                        echo"<div class='lingkaran'>";
+                
+                                    date_default_timezone_set('Etc/GMT-8');
+                
+                                    $pilih = "SELECT * FROM comment_table ORDER BY date desc";
+                                    $query = mysqli_query($db, $pilih);
+                                    while($daftar_comment = mysqli_fetch_array($query)){
+                                        echo"<br>";
+                                        echo"<div class='perComment'>";
+                                        // echo"<td>".$daftar_comment['id']."</td>";
+                                        echo"<div class='bagian_nama'>";
+                                            echo"<div class ='nama'>".$daftar_comment['name']."</div>";
+                                            echo"<div class='lingkaran'>";
+                                            echo"</div>";
+                                            // $tanggalLagi = date_create($daftar_comment['date'],);
+                                            // $tanggalAgo = date_format($tanggalLagi, 'Y/m/d');
+                
+                                                
+                                                
+                                                echo "<div class='tanggal'>".timeAgo($daftar_comment['date'])."</div>";
+                                                // echo "<div class='tanggal'>".date('l jS \of F Y h:i:s A')."</div>";
+                                                // echo "<div class='tanggal'>".timeAgo2($daftar_comment['date'])."</div>";
+                                            // echo "<div class='tanggal'>".date('l jS \of F Y h:i:s A', $TIME)."</div>";
+                
+                
+                                            // echo"<div class='tanggal'>".$tanggalAgo."</div>";
                                         echo"</div>";
-                                        // $tanggalLagi = date_create($daftar_comment['date'],);
-                                        // $tanggalAgo = date_format($tanggalLagi, 'Y/m/d');
-            
-                                            
-                                            
-                                            echo "<div class='tanggal'>".timeAgo($daftar_comment['date'])."</div>";
-                                            // echo "<div class='tanggal'>".date('l jS \of F Y h:i:s A')."</div>";
-                                            // echo "<div class='tanggal'>".timeAgo2($daftar_comment['date'])."</div>";
-                                        // echo "<div class='tanggal'>".date('l jS \of F Y h:i:s A', $TIME)."</div>";
-            
-            
-                                        // echo"<div class='tanggal'>".$tanggalAgo."</div>";
-                                    echo"</div>";
-                                    echo"<div class='isiComment'>".$daftar_comment['isi_comment']."</div>";
-                                    echo"</div>";
-                                    
-                                    echo"<br>";
-                                    echo"<hr class='hr'>";
-                                }
-            
-                                // echo mysli_num_rows($query);
-                            
-            
-                            ?>
-            
+                                        echo"<div class='isiComment'>".$daftar_comment['isi_comment']."</div>";
+                                        echo"</div>";
+                                        
+                                        echo"<br>";
+                                        echo"<div class='hr'></div>";
+                                    }
+                
+                                    // echo mysli_num_rows($query);
+                                
+                
+                                ?>
+                
+                            </div>
                         </div>
                     </div>
                 </div>

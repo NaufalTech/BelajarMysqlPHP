@@ -37,9 +37,10 @@ article {
 
 .background-1 {
     /* background-image: url(size-CSS-background-images-correctly.webp); */
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.693)), url(/media/size-CSS-background-images-correctly.webp);
+    background:
+        linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.693)), url(/BelajarMysqlPHP/media/size-CSS-background-images-correctly.webp);
     background-size: cover;
+    
 }
 
 .first-1{
@@ -96,9 +97,9 @@ a.flex {
 }
 
 .background-1:hover {
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.832)), url(size-CSS-background-images-correctly.webp);
-
+    background:
+        linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.832)), url(/BelajarMysqlPHP/media/size-CSS-background-images-correctly.webp);
+    background-size: cover;
 }
 
 hgroup {
