@@ -254,7 +254,7 @@
     
 
     .nav-bottom {
-        background-image: url(/media/size-CSS-background-images-correctly.webp);
+        background-image: url(/BelajarMysqlPHP/media/size-CSS-background-images-correctly.webp);
         /* position: fixed; */
         bottom: 0;
         right: 0;
@@ -264,7 +264,7 @@
         padding-bottom: 150px;
         padding-top: 5px;
         height: 25px;
-        -moz-border-image: url(/media/size-CSS-background-images-correctly.webp);
+        /* -moz-border-image: url(/media/size-CSS-background-images-correctly.webp); */
     }
 
     .p-social-media-link {

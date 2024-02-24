@@ -84,8 +84,9 @@ article#content {
 }
 
 .article-content {
+    padding-bottom: 50px;
     width: 80%;
-    box-shadow: 0px 0px 20px grey;
+    box-shadow: 0px 0px 20px rgb(207, 207, 207);
 }
 
 .wrapper-isiContent{

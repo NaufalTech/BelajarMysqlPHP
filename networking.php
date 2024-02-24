@@ -103,7 +103,7 @@
                                 <li class="table-index-sidebar border-bottom padding-left-sidebar">
                                     <a href="http://google.com">hehe1</a>
                                 </li>
-                                <div class="wrapper-sub-table-index-sidebar" style="border-bottom: solid red 2px;">
+                                <div class="wrapper-sub-table-index-sidebar" >
                                     
                                     <li class="sub-table-index-sidebar padding-left-sidebar">
                                         <a href="#respond">hehe1</a>
@@ -282,7 +282,11 @@
                                     }
                 
                                     // echo mysli_num_rows($query);
-                                
+                                    $kosong = mysqli_num_rows($query);
+                                    if(empty($kosong)){
+                                        echo"<div class='tidak-ada-komentar'>Belum ada komentar :(</div>";
+                                        // echo;
+                                    }
                 
                                 ?>
                 

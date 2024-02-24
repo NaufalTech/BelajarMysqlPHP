@@ -64,6 +64,11 @@
   width: 80%;
 }
 
+.tidak-ada-komentar {
+  font-size: x-large;
+  text-align: center;
+}
+
 #respond {
   /* background: springgreen; */
 }
