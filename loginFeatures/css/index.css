@@ -1,0 +1,18 @@
+.wrapper-content {
+    display: grid;
+    background-color: aqua;
+    justify-items: center;
+    align-items: center;
+    height: 1000px;
+    row-gap: 0;
+}
+
+.account {
+    background-color: red;
+    width: 100px;
+    aspect-ratio: 1/1;
+    justify-items: right;
+    /* align-items: start; */
+    /* self */
+    /* gap */
+}

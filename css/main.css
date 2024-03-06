@@ -254,7 +254,9 @@
     
 
     .nav-bottom {
-        background-image: url(/BelajarMysqlPHP/media/size-CSS-background-images-correctly.webp);
+        background-image: url('/BelajarMysqlPHP/media/13722099_5328478.jpg');
+        background-repeat: repeat;
+        background-size: 700px;
         /* position: fixed; */
         bottom: 0;
         right: 0;

@@ -184,6 +184,12 @@
                         
                             </div>
                         </section>
+                        <div class="login">
+                            <div class="login2">
+                                <h1>Belum punya akun ?</h1>
+                                <a href=""></a>
+                            </div>
+                        </div>
                         <div class="wrapper-daftarComment width-80">
                             <h3>Komentar</h3>
                             <div class="daftarComment" >

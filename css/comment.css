@@ -127,3 +127,31 @@ form#commentForm {
     font-size: large;
     margin: 0 15px 15px 0;
   }
+
+.login {
+  /* margin-top: 100px; */
+  display: grid;
+  top: 0;
+  width: 1000vh;
+  height: 100vw;
+  position: fixed;
+  justify-items: center;
+  background-color: rgba(128, 118, 118, 0.693);
+  /* backdrop-filter: ; */
+  backdrop-filter: var(--tw-backdrop-blur)var(--tw-backdrop-brightness)var(--tw-backdrop-contrast)var(--tw-backdrop-grayscale)var(--tw-backdrop-hue-rotate)var(--tw-backdrop-invert)var(--tw-backdrop-opacity)var(--tw-backdrop-saturate)var(--tw-backdrop-sepia);
+  --tw-backdrop-blur: blur(8px);
+  
+}
+.login2 {
+  width: 800px;
+  height: 60px;
+  position: fixed;
+  
+  background-color: blue;
+  /* top: 50%; */
+  left: auto;
+  bottom: 0;
+
+
+  /* right: 50%; */
+}
